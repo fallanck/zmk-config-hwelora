@@ -1,0 +1,12 @@
+file_format: "1"
+id: hwelora
+name: HW Elora
+type: shield
+url: https://github.com/MoltenZaz/zmk-config-hwelora
+requires: [xiao_ble]
+features:
+  - keys
+siblings:
+  - hwelora_dongle
+  - hwelora_left
+  - hwelora_right

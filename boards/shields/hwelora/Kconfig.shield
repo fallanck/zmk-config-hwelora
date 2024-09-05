@@ -1,0 +1,8 @@
+config SHIELD_HWELORA_DONGLE
+	def_bool $(shields_list_contains,hwelora_dongle)
+	
+config SHIELD_HWELORA_LEFT
+    def_bool $(shields_list_contains,hwelora_left)
+
+config SHIELD_HWELORA_RIGHT
+    def_bool $(shields_list_contains,hwelora_right)

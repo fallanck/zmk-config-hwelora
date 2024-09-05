@@ -19,11 +19,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: kyria_rev3_left
+    shield: hwelora_dongle
   - board: seeeduino_xiao_ble
-    shield: kyria_rev3_right
-include:
+    shield: hwelora_left
   - board: seeeduino_xiao_ble
-    shield: kyria_rev3_left
-  - board: seeeduino_xiao_ble
-    shield: kyria_rev3_right
+    shield: hwelora_right
