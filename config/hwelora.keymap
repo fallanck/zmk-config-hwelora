@@ -5,16 +5,16 @@
 
 #define DEFAULT 0
 #define QWERTY   1
-#define GAMING   3
-#define MIRROR   4
-#define QMIR   5
-#define GMIR   6
-#define ARROWS   7
-#define NAVL   8
-#define NAVR   9
-#define NAV2   10
-#define FKEY   11
-#define SETTINGS   12
+#define GAMING   2
+#define MIRROR   3
+#define QMIR   4
+#define GMIR   5
+#define ARROWS   6
+#define NAVL   7
+#define NAVR   8
+#define NAV2   9
+#define FKEY   10
+#define SETTINGS   11
 
 / {
     macros {
