@@ -27,3 +27,4 @@ include:
     snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    snippet: zmk-usb-logging
