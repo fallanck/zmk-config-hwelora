@@ -14,10 +14,3 @@ config ZMK_SPLIT
     default y
 
 endif
-
-if  SHIELD_HWELORA_LEFT || SHIELD_HWELORA_RIGHT
-
-config ZMK_SPLIT_ROLE_PERIPHERAL
-    default y
-
-endif
