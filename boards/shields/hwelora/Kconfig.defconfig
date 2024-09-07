@@ -1,4 +1,4 @@
-if SHIELD_HWELORA_DONGLE
+if SHIELD_HWELORA_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "HW Elora"
