@@ -15,6 +15,7 @@
 #define NAV2   9
 #define FKEY   10
 #define SETTINGS   11
+#define SETTINGS2   12
 
 / {
     macros {
@@ -180,11 +181,20 @@
         };
 		SETTINGS {
             bindings = <
-	&bootloader    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         	  &none  	  &none  &none    &none   &none   &bootloader
-    &bt BT_CLR_ALL &none    	&none    	 &none    	  &none   	   &bt BT_CLR                        	      &bt BT_CLR  &none  &none    &none   &none   &bt BT_CLR_ALL
-    &out OUT_USB   &none    	&none    	 &none    	  &none   	   &none                                	  &none  	  &none  &none    &none   &none   &out OUT_USB
-    &out OUT_BLE   &none    	&none    	 &none    	  &none   	   &none 		&to DEFAULT    &none    &to 0 &none  	  &none  &none    &none   &none   &out OUT_BLE
-										     &none    	  &none   	   &none 		&none          &none    &none &none  	  &none  &none    &none
+	&none &none &none &none &none &none                         	  				&none &none &none &none &none &none
+    &none &none &none &none &none &none                        	      				&none &none &none &none &none &none
+    &none &none &none &none &none &none                                	    		&none &none &none &none &none &none
+    &none &none &none &none &none &none &mo SETTINGS2  &none    &none &mo SETTINGS2 &none &none &none &none &none &none
+					  &none &none &none &none          &none    &none &none  	    &none &none &none
+            >;
+        };
+		SETTINGS2 {
+            bindings = <
+	&bootloader    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         	  		&none  	   &none  &none    &none   &none   &bootloader
+    &bt BT_CLR_ALL &none    	&none    	 &none    	  &none   	   &bt BT_CLR                        	      		&bt BT_CLR &none  &none    &none   &none   &bt BT_CLR_ALL
+    &out OUT_USB   &none    	&none    	 &none    	  &none   	   &none                                	  		&none  	   &none  &none    &none   &none   &out OUT_USB
+    &out OUT_BLE   &none    	&none    	 &none    	  &none   	   &none 		&to DEFAULT    &none    &to DEFAULT &none  	   &none  &none    &none   &none   &out OUT_BLE
+										     &none    	  &none   	   &none 		&none          &none    &none 		&none  	   &none  &none    &none
             >;
         };
     };
