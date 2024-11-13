@@ -97,7 +97,7 @@
 	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
     &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
     &sl MIRROR 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RET
-    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &tog GAMING &mo FKEY    &kp F13    &kp F14 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
+    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &tog GAMING &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
 									   &lm QWERTY LGUI &lm QWERTY LALT  &kp LSHIFT &kp SPACE   &mo NAVL    &mo NAVR   &kp BSPC    &kp RSHIFT &lm QWERTY RALT &kp K_APP
             >;
         };
@@ -124,26 +124,26 @@
 	&kp CAPS 	   &kp N0   &kp N9   &kp N8    		 &kp N7    	   &kp N6                                               &trans    &trans    &trans    &trans    &trans   &trans
     &kp LS(TAB)    &kp W    &kp C    &kp L     		 &kp D     	   &kp K                                                &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
     &trans  	   &kp R    &kp S    &kp T     		 &kp H     	   &kp M                                                &kp GRAVE &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
-    &lm QMIR RCTRL &kp X    &kp V    &kp G     		 &kp F   	   &kp B  &tog SFTSWAP &trans     &trans    &tog ARROWS &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-									 &lm QMIR RGUI   &lm QMIR RALT &trans &trans       &kp K_APP  &trans    &trans      &trans    &trans    &trans
+    &lm QMIR RCTRL &kp X    &kp V    &kp G     		 &kp F   	   &kp B  &tog SFTSWAP &trans     &tog ARROWS &kp F14   &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
+									 &lm QMIR RGUI   &lm QMIR RALT &trans &trans       &kp K_APP  &trans      &trans    &trans    &trans    &trans
             >;
         };
 		QMIR {
             bindings = <
-	&kp CAPS   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                        &trans    &trans    &trans    &trans    &trans   &trans
-    &kp LS(TAB)	&kp P    &kp O    &kp I     &kp U    &kp Y                                         &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
-    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                         &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
-    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &trans &tog ARROWS &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans &trans      &trans    &trans    &trans
+	&kp CAPS   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                          &trans    &trans    &trans    &trans    &trans   &trans
+    &kp LS(TAB)	&kp P    &kp O    &kp I     &kp U    &kp Y                                           &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
+    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                           &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
+    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &tog ARROWS &kp F14  &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
+								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans      &trans   &trans    &trans    &trans
             >;
         };
 		GMIR {
             bindings = <
-	&kp BSPC   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                        &trans    &trans    &trans    &trans    &trans   &trans
-    &kp LS(TAB)	&kp P    &kp O    &kp I     &kp U    &kp Y                                         &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
-    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                         &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
-    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &trans &tog ARROWS &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans &trans      &trans    &trans    &trans
+	&kp BSPC   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                          &trans    &trans    &trans    &trans    &trans   &trans
+    &kp LS(TAB)	&kp P    &kp O    &kp I     &kp U    &kp Y                                           &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
+    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                           &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
+    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &tog ARROWS &kp F14  &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
+								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans 		&trans   &trans    &trans    &trans
             >;
         };
 		ARROWS {
