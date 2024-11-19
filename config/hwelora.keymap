@@ -97,7 +97,7 @@
 	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
     &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
     &sl MIRROR 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RET
-    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &tog GAMING &bootloader    &bootloader    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
+    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &tog GAMING &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
 									   &lm QWERTY LGUI &lm QWERTY LALT  &kp LSHIFT &kp SPACE   &mo NAVL    &mo NAVR   &kp BSPC    &kp RSHIFT &lm QWERTY RALT &kp K_APP
             >;
         };
