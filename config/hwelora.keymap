@@ -106,7 +106,7 @@
 		LNPAD {
             bindings = <
 	&kp ESC 	 &trans 	  &trans 	&trans 	  &trans		&trans                         	  			  	  &trans &trans &trans &trans &trans &trans
-    &kp TAB 	 &kp KP_PLUS  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_NUM                        	      			  &trans &trans &trans &trans &trans &trans
+    &kp TAB 	 &kp KP_PLUS  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp BSPC                        	      			  &trans &trans &trans &trans &trans &trans
     &kp KP_ENTER &kp KP_N0 	  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MULTIPLY                                	      &trans &trans &trans &trans &trans &trans
     &trans		 &kp KP_MINUS &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DIVIDE &to DEFAULT   &trans 		&trans &trans &trans &trans &trans &trans &trans &trans
 										&trans 	  &trans 	&kp KP_DOT 	  &trans 		&trans  	&trans &trans &trans &trans &trans
