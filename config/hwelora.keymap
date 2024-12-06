@@ -12,11 +12,12 @@
 #define ARROWS   6
 #define SFTSWAP 7
 #define NAVL   8
-#define NAVR   9
-#define NAV2   10
-#define FKEY   11
-#define SETTINGS   12
-#define SETTINGS2   13
+#define LNPAD	9
+#define NAVR   10
+#define NAV2   11
+#define FKEY   12
+#define SETTINGS   13
+#define SETTINGS2   14
 
 / {
     macros {
