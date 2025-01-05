@@ -224,11 +224,11 @@
         };
 		SETTINGS2 {
             bindings = <
-	&bootloader    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         	  		&none  	   &none  &none    &none   &none   &bootloader
-    &bt BT_CLR_ALL &none    	&none    	 &none    	  &none   	   &bt BT_CLR                        	      		&bt BT_CLR &none  &none    &none   &none   &bt BT_CLR_ALL
-    &out OUT_USB   &none    	&none    	 &none    	  &none   	   &none                                	  		&none  	   &none  &none    &none   &none   &out OUT_USB
-    &out OUT_BLE   &none    	&none    	 &none    	  &none   	   &none 		&to DEFAULT    &none    &to DEFAULT &none  	   &none  &none    &none   &none   &out OUT_BLE
-										     &none    	  &none   	   &none 		&none          &none    &none 		&none  	   &none  &none    &none
+	&bootloader    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         	  		&none  	   		&none  &none    &none   &none   &bootloader
+    &bt BT_CLR_ALL &none    	&none    	 &none    	  &none   	   &bt BT_CLR                        	      		&bt BT_CLR 		&none  &none    &none   &none   &bt BT_CLR_ALL
+    &out OUT_USB   &none    	&none    	 &none    	  &none   	   &studio_unlock                          	  		&studio_unlock  &none  &none    &none   &none   &out OUT_USB
+    &out OUT_BLE   &none    	&none    	 &none    	  &none   	   &none 		&to DEFAULT    &none    &to DEFAULT &none  	   		&none  &none    &none   &none   &out OUT_BLE
+										     &none    	  &none   	   &none 		&none          &none    &none 		&none  	   		&none  &none    &none
             >;
         };
     };
