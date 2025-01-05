@@ -10,6 +10,7 @@
     chosen {
 		zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+		physical-layout = <&hwelora_layout>;
     };
 
     default_transform: keymap_transform_0 {
