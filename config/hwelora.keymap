@@ -16,13 +16,13 @@
 #define NAVR   10
 #define NAV2   11
 #define FKEY   12
-#define extra1   13
-#define extra2   14
-#define extra3   15
-#define extra4   16
-#define extra5   17
-#define SETTINGS   18
-#define SETTINGS2   19
+#define SETTINGS   13
+#define SETTINGS2   14
+#define extra1   15
+#define extra2   16
+#define extra3   17
+#define extra4   18
+#define extra5   19
 
 / {
     macros {
@@ -218,26 +218,6 @@
 								   &trans    &trans   &trans    &mo SETTINGS &none     &trans &mo SETTINGS &trans    &trans    &trans
             >;
         };
-				
-		extra1 {
-            status = "reserved";
-        };
-
-        extra2 {
-            status = "reserved";
-        };
-		extra3 {
-            status = "reserved";
-        };
-
-        extra4 {
-            status = "reserved";
-        };
-		
-		extra5 {
-            status = "reserved";
-        };
-		
 		SETTINGS {
             bindings = <
 	&none &none &none &none &none &none                         	  				&none &none &none &none &none &none
@@ -256,5 +236,21 @@
 										     &none    	  &none   	   &none 		&none          &none    &none 		&none  	   		&none  &none    &none
             >;
         };
+		extra1 {
+            status = "reserved";
+        };
+        extra2 {
+            status = "reserved";
+        };
+		extra3 {
+            status = "reserved";
+        };
+        extra4 {
+            status = "reserved";
+        };
+		extra5 {
+            status = "reserved";
+        };
+		
     };
 };
