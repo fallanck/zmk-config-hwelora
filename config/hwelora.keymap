@@ -18,11 +18,6 @@
 #define FKEY   12
 #define SETTINGS   13
 #define SETTINGS2   14
-#define extra1   15
-#define extra2   16
-#define extra3   17
-#define extra4   18
-#define extra5   19
 
 / {
     macros {
@@ -103,7 +98,7 @@
 	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
     &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
     &sl MIRROR 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RET
-    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &tog GAMING &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
+    &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &to DEFAULT &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
 									   &lm QWERTY LGUI &lm QWERTY LALT  &kp LSHIFT &kp SPACE   &mo NAVL    &mo NAVR   &kp BSPC    &kp RSHIFT &lm QWERTY RALT &kp K_APP
             >;
         };
@@ -214,7 +209,7 @@
 	&trans     &trans    &kp F10   &kp F11   &kp F12  &kp F13                                   	       &kp F13   &kp F10   &kp F11   &kp F12   &kp F13  &trans
     &trans     &kp F10   &kp F7    &kp F8    &kp F9   &kp F13                                    	       &kp F13   &kp F7    &kp F8    &kp F9    &kp F10  &trans
     &kp LSHIFT &kp F11   &kp F4    &kp F5    &kp F6   &kp PG_UP                                    	       &kp HOME  &kp F4    &kp F5    &kp F6    &kp F11  &trans
-    &trans     &kp F12   &kp F1    &kp F2    &kp F3   &kp PG_DN &to DEFAULT  &trans    &trans &to DEFAULT  &kp END   &kp F1    &kp F2    &kp F3    &kp F12  &trans
+    &trans     &kp F12   &kp F1    &kp F2    &kp F3   &kp PG_DN &to GAMING   &trans    &trans &to DEFAULT  &kp END   &kp F1    &kp F2    &kp F3    &kp F12  &trans
 								   &trans    &trans   &trans    &mo SETTINGS &none     &trans &mo SETTINGS &trans    &trans    &trans
             >;
         };
@@ -236,21 +231,5 @@
 										     &none    	  &none   	   &none 		&none          &none    &none 		&none  	   		&none  &none    &none
             >;
         };
-		extra1 {
-            status = "reserved";
-        };
-        extra2 {
-            status = "reserved";
-        };
-		extra3 {
-            status = "reserved";
-        };
-        extra4 {
-            status = "reserved";
-        };
-		extra5 {
-            status = "reserved";
-        };
-		
     };
 };
