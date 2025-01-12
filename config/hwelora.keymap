@@ -171,9 +171,9 @@
             bindings = <
 	&trans     &trans    &trans    &trans    &trans   &trans                                        &trans    &trans    &trans   &trans    &trans   &trans
     &trans     &trans    &trans    &trans    &trans   &trans                                        &trans    &trans    &trans   &trans    &trans   &trans
-    &kp LSHIFT &trans    &trans    &trans    &trans   &trans                                   	    &trans    &trans    &trans   &trans    &trans   &mt RSHIFT RET
+    &kp LSHIFT &trans    &trans    &trans    &trans   &trans                                   	    &trans    &trans    &trans   &trans    &trans   &kp RSHIFT
     &trans     &trans    &trans    &trans    &trans   &trans 	 &trans    &trans    &trans &trans  &trans    &trans    &trans   &trans    &trans   &trans
-								   &trans    &trans   &sl MIRROR &trans    &trans    &trans &trans  &trans    &trans    &trans
+								   &trans    &trans   &sl MIRROR &trans    &trans    &trans &trans  &kp RET   &trans    &trans
             >;
         };
 		NAVL {
