@@ -5,13 +5,13 @@
 
 #define DEFAULT 0
 #define LNPAD	1
-#define QWERTY   2
-#define GAMING   3
-#define MIRROR   4
-#define QMIR   5
-#define GMIR   6
-#define ARROWS   7
-#define SFTSWAP 8
+#define SFTSWAP 2
+#define QWERTY   3
+#define GAMING   4
+#define MIRROR   5
+#define QMIR   6
+#define GMIR   7
+#define ARROWS   8
 #define NAVL   9
 #define NAVR   10
 #define NAV2   11
@@ -97,9 +97,9 @@
             bindings = <
 	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
     &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
-    &sl MIRROR 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RET
+    &kp LSHIFT 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RSHIFT
     &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &to DEFAULT &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
-									   &lm QWERTY LGUI &lm QWERTY LALT  &kp LSHIFT &kp SPACE   &mo NAVL    &mo NAVR   &kp BSPC    &kp RSHIFT &lm QWERTY RALT &kp K_APP
+									   &lm QWERTY LGUI &lm QWERTY LALT  &sl MIRROR &kp SPACE   &mo NAVL    &mo NAVR   &kp BSPC    &kp RET    &lm QWERTY RALT &kp K_APP
             >;
         };
 		
@@ -112,14 +112,22 @@
 										&trans 	  &trans 	&kp KP_DOT 	  &trans 		&trans  	&trans &trans &trans &trans &trans
             >;
         };
-	
+		SFTSWAP {
+            bindings = <
+	&trans     &trans    &trans    &trans    &trans   &trans                                        &trans     &trans    &trans   &trans    &trans   &trans
+    &trans     &trans    &trans    &trans    &trans   &trans                                        &trans     &trans    &trans   &trans    &trans   &trans
+    &sl MIRROR &trans    &trans    &trans    &trans   &trans                                   	    &trans     &trans    &trans   &trans    &trans   &kp RET
+    &trans     &trans    &trans    &trans    &trans   &trans 	 &trans    &trans    &trans &trans  &trans     &trans    &trans   &trans    &trans   &trans
+								   &trans    &trans   &kp LSHIFT &trans    &trans    &trans &trans  &kp RSHIFT &trans    &trans
+            >;
+        };
 		QWERTY {
             bindings = <
 	&trans     &trans   &trans   &trans    &trans    &trans                                          &trans    &trans    &trans    &trans    &trans   &trans
     &trans     &kp Q    &kp W    &kp E     &kp R     &kp T                                           &kp Y     &kp U     &kp I     &kp O     &kp P    &trans
     &kp LSHIFT &kp A    &kp S    &kp D     &kp F     &kp G                                           &kp H     &kp J     &kp K     &kp L     &kp SEMI &trans
     &kp LCTRL  &kp Z    &kp X    &kp C     &kp V 	 &kp B      &trans   &trans    &trans   &trans   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
-                                 &kp LGUI  &trans    &trans     &trans   &trans    &trans   &trans   &trans    &kp RALT  &trans
+                                 &kp LGUI  &trans    &kp LSHIFT &trans   &trans    &trans   &trans   &trans    &kp RALT  &trans
             >;
         };
 		GAMING {
@@ -165,15 +173,6 @@
     &trans    &trans    &trans    &trans    &trans   &trans                                    &trans    &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
     &trans    &trans    &trans    &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans    &trans    &trans   &trans
 								  &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans
-            >;
-        };
-		SFTSWAP {
-            bindings = <
-	&trans     &trans    &trans    &trans    &trans   &trans                                        &trans    &trans    &trans   &trans    &trans   &trans
-    &trans     &trans    &trans    &trans    &trans   &trans                                        &trans    &trans    &trans   &trans    &trans   &trans
-    &kp LSHIFT &trans    &trans    &trans    &trans   &trans                                   	    &trans    &trans    &trans   &trans    &trans   &kp RSHIFT
-    &trans     &trans    &trans    &trans    &trans   &trans 	 &trans    &trans    &trans &trans  &trans    &trans    &trans   &trans    &trans   &trans
-								   &trans    &trans   &sl MIRROR &trans    &trans    &trans &trans  &kp RET   &trans    &trans
             >;
         };
 		NAVL {
