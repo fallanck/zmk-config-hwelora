@@ -145,7 +145,7 @@
     &kp LS(TAB)    &kp W    &kp C    &kp L     		 &kp D     	   &kp K                                                  &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
     &mt LSHIFT RET &kp R    &kp S    &kp T     		 &kp H     	   &kp M                                                  &kp GRAVE &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
     &lm QMIR RCTRL &kp X    &kp V    &kp G     		 &kp F   	   &kp B    &tog LNPAD   &mo FKEY   &tog ARROWS &kp F14   &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &trans      &trans    &trans    &trans    &trans
+									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &mo FKEY    &trans    &trans    &trans    &trans
             >;
         };
 		QMIR {
