@@ -3,9 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200 
 #include <dt-bindings/zmk/pointing.h>
 &mmv {
+    time-to-max-speed-ms = <1500>;
+    acceleration-exponent = <1>;
+};
+&msc {
     time-to-max-speed-ms = <1500>;
     acceleration-exponent = <1>;
 };
@@ -19,13 +23,24 @@
 #define QMIR   6
 #define GMIR   7
 #define ARROWS   8
-#define ARROWL   9
-#define NAVL   10
-#define NAVR   11
-#define NAV2   12
-#define FKEY   13
-#define SETTINGS   14
-#define SETTINGS2   15
+#define ARACTV   9
+#define ARROWL   10
+#define NAVL   11
+#define NAVR   12
+#define NAV2   13
+#define FKEY   14
+#define SETTINGS   15
+#define SETTINGS2   16
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <MIRROR ARACTV>;
+            then-layer = <ARROWL>;
+        };
+    };
+};
 
 / {
     macros {
@@ -153,7 +168,7 @@
     &kp DEL    	   &kp W    &kp C    &kp L     		 &kp D     	   &kp K                                                  &kp KP_NUM 	  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS  &trans
     &mt LSHIFT RET &kp R    &kp S    &kp T     		 &kp H     	   &kp M                                                  &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_N0    &kp KP_ENTER
     &lm QMIR RCTRL &kp X    &kp V    &kp G     		 &kp F   	   &kp B    &tog LNPAD   &mo FKEY   &tog ARROWS &kp F14   &kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS &trans
-									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &tog ARROWL &trans    &kp KP_DOT      &trans    &trans
+									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &tog ARACTV &trans    &kp KP_DOT      &trans    &trans
             >;
         };
 		QMIR {
@@ -181,6 +196,15 @@
     &trans    &trans    &trans    &trans    &trans   &trans                                    &trans    &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
     &trans    &trans    &trans    &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans    &trans    &trans   &trans
 								  &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans
+            >;
+        };
+		ARACTV {
+            bindings = <
+	&trans    &trans    &trans    &trans    &trans    &trans                                    &trans    &trans    &trans    &trans    &trans   &trans
+    &trans    &trans    &trans    &trans    &trans    &trans  					                &trans    &trans    &trans    &trans    &trans   &trans
+    &trans    &trans    &trans    &trans    &trans    &trans                                    &trans    &trans  	&trans    &trans 	&trans   &trans
+    &trans    &trans    &trans    &trans    &trans    &trans &trans    &trans    &trans &trans  &trans    &trans    &trans    &trans    &trans   &trans
+								  &trans    &trans    &trans &trans    &trans    &trans &trans  &trans    &trans    &trans
             >;
         };
 		ARROWL {
