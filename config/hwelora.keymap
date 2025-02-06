@@ -24,13 +24,12 @@
 #define GMIR   7
 #define ARROWS   8
 #define ARACTV   9
-#define ARROWL   10
-#define NAVL   11
-#define NAVR   12
-#define NAV2   13
-#define FKEY   14
-#define SETTINGS   15
-#define SETTINGS2   16
+#define NAVL   10
+#define NAVR   11
+#define NAV2   12
+#define FKEY   13
+#define SETTINGS   14
+#define SETTINGS2   15
 
 / {
     conditional_layers {
@@ -196,15 +195,6 @@
     &trans    &trans    &trans    &trans    &trans   &trans                                    &trans    &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
     &trans    &trans    &trans    &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans    &trans    &trans   &trans
 								  &trans    &trans   &trans &trans    &trans    &trans &trans  &trans    &trans    &trans
-            >;
-        };
-		ARACTV {
-            bindings = <
-	&trans    &trans    &trans    &trans    &trans    &trans                                    &trans    &trans    &trans    &trans    &trans   &trans
-    &trans    &trans    &trans    &trans    &trans    &trans  					                &trans    &trans    &trans    &trans    &trans   &trans
-    &trans    &trans    &trans    &trans    &trans    &trans                                    &trans    &trans  	&trans    &trans 	&trans   &trans
-    &trans    &trans    &trans    &trans    &trans    &trans &trans    &trans    &trans &trans  &trans    &trans    &trans    &trans    &trans   &trans
-								  &trans    &trans    &trans &trans    &trans    &trans &trans  &trans    &trans    &trans
             >;
         };
 		ARROWL {
