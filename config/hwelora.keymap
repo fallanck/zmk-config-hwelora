@@ -36,7 +36,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <MIRROR ARACTV>;
+            if-layers = <MIRROR ARROWL>;
             then-layer = <ARROWL>;
         };
     };
@@ -168,7 +168,7 @@
     &kp DEL    	   &kp W    &kp C    &kp L     		 &kp D     	   &kp K                                                  &kp KP_NUM 	  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS  &trans
     &mt LSHIFT RET &kp R    &kp S    &kp T     		 &kp H     	   &kp M                                                  &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_N0    &kp KP_ENTER
     &lm QMIR RCTRL &kp X    &kp V    &kp G     		 &kp F   	   &kp B    &tog LNPAD   &mo FKEY   &tog ARROWS &kp F14   &kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS &trans
-									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &tog ARACTV &trans    &kp KP_DOT      &trans    &trans
+									 &lm QMIR RGUI   &lm QMIR RALT &kp BSPC &trans       &trans     &tog ARROWL &trans    &kp KP_DOT      &trans    &trans
             >;
         };
 		QMIR {
