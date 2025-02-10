@@ -1,3 +1,12 @@
+#define DT_DRV_COMPAT zmk_hid_to_layer
+
+#include <zephyr/device.h>
+#include <drivers/behavior.h>
+#include <zephyr/logging/log.h>
+
+#include <zmk/keymap.h>
+#include <zmk/behavior.h>
+
 static int raw_hid_received_event_listener(const zmk_event_t *eh) {
     struct raw_hid_received_event *event = as_raw_hid_received_event(eh);
     if (event) {
