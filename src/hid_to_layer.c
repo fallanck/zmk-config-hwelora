@@ -8,6 +8,7 @@
 #include <zmk/keymap.h>
 #include <zmk/behavior.h>
 
+#include <zephyr/logging/log.h>
 // static int raw_hid_received_event_listener(const zmk_event_t *eh) {
     // struct raw_hid_received_event *event = as_raw_hid_received_event(eh);
     // if (event->data==0) {
