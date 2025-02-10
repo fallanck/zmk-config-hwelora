@@ -1,5 +1,3 @@
-#define DT_DRV_COMPAT zmk_hid_to_layer
-
 #include <raw_hid/events.h>
 #include <zephyr/device.h>
 #include <drivers/behavior.h>
