@@ -10,19 +10,19 @@
 
 static int raw_hid_received_event_listener(const zmk_event_t *eh) {
     struct raw_hid_received_event *event = as_raw_hid_received_event(eh);
-    if (event->data[0]==0) {
+    if (event->data[0]==00) {
         // do something
 		zmk_keymap_layer_to(0);
     }
-	if (event->data[0]==1) {
+	if (event->data[0]==01) {
         // do something
 		zmk_keymap_layer_to(4);
     }
-	if (event->data[0]==2) {
+	if (event->data[0]==02) {
         // do something
 		zmk_keymap_layer_activate(8);
     }
-	if (event->data[0]==3) {
+	if (event->data[0]==03) {
         // do something
 		zmk_keymap_layer_deactivate(8);
     }
