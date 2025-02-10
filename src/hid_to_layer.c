@@ -10,21 +10,21 @@
 
 static int raw_hid_received_event_listener(const zmk_event_t *eh) {
     struct raw_hid_received_event *event = as_raw_hid_received_event(eh);
-    if (event=0) {
+    if (event->data[0]==0) {
         // do something
 		zmk_keymap_layer_to(0);
     }
-	if (event=1) {
+	if (event->data[0]==1) {
         // do something
 		zmk_keymap_layer_to(4);
     }
-	if (event=2) {
+	if (event->data[0]==2) {
         // do something
-		zmk_keymap_layer_on(8);
+		zmk_keymap_layer_activate(8);
     }
-	if (event=3) {
+	if (event->data[0]==3) {
         // do something
-		zmk_keymap_layer_off(8);
+		zmk_keymap_layer_deactivate(8);
     }
 
     return ZMK_EV_EVENT_BUBBLE;
