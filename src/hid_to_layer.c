@@ -34,9 +34,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 static void process_raw_hid_data(uint8_t *data) {
     LOG_INF("display_process_raw_hid_data - received data_type %u", data[0]);
-	
-    uint8_t data_type = data[0];
-		switch (data_type) {
+		switch (data[0]) {
 		case 0:
 		zmk_keymap_layer_to(0);
 		case 1:
