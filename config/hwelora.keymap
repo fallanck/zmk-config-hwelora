@@ -155,11 +155,11 @@
         };
 		GAMING {
             bindings = <
-	&kp ESC &kp N5     &kp N1   &kp N2    &kp N3    &kp N4                                        &trans    &trans    &trans    &trans    &trans   &trans
-    &kp T   &kp TAB    &kp Q    &kp W     &kp E     &kp R                                         &kp Y     &kp U     &kp UP    &kp O     &kp P    &trans
-    &kp G   &kp LSHIFT &kp A	&kp S     &kp D     &kp F                                         &kp H     &kp LEFT  &kp DOWN  &kp RIGHT &kp SEMI &trans
-    &kp B   &kp LCTRL  &kp Z    &kp X     &kp C     &kp V    &trans   &trans    &trans   &trans   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
-                                &kp K_APP &kp LALT  &mo NAVL &trans   &mo QMIR  &trans   &trans   &trans    &kp RALT  &trans
+	&kp ESC &kp N5     &kp N1   &kp N2    &kp N3    	 &kp N4                                        &trans    &trans    &trans    &trans    &trans   &trans
+    &kp T   &kp TAB    &kp Q    &kp W     &kp E     	 &kp R                                         &kp Y     &kp U     &kp UP    &kp O     &kp P    &trans
+    &kp G   &kp LSHIFT &kp A	&kp S     &kp D    	 	 &kp F                                         &kp H     &kp LEFT  &kp DOWN  &kp RIGHT &kp SEMI &trans
+    &kp B   &kp LCTRL  &kp Z    &kp X     &kp C     	 &kp V    &trans   &trans    &trans   &trans   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
+                                &kp K_APP &lm GTAB LALT  &mo NAVL &trans   &mo QMIR  &trans   &trans   &trans    &kp RALT  &trans
             >;
         };
 		MIRROR {
