@@ -21,7 +21,7 @@
 #define GAMING   4
 #define MIRROR   5
 #define QMIR   6
-#define GMIR   7
+#define GTAB   7
 #define ARROWS   8
 #define ARACTV   9
 #define ARROWL   10
@@ -120,9 +120,9 @@
             bindings = <
 	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
     &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
-    &kp LSHIFT 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &mt RSHIFT RET
+    &kp LSHIFT 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RSHIFT
     &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &to DEFAULT &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
-									   &lm QWERTY LGUI &lm QWERTY LALT  &mo NAVL   &kp SPACE   &sl MIRROR  &mo NAVR   &kp BSPC    &kp RET    &lm QWERTY RALT &kp K_APP
+									   &lm QWERTY LGUI &lm QWERTY LALT  &mo NAVL   &kp SPACE   &mo MIRROR  &mo NAVR   &kp BSPC    &kp RET    &lm QWERTY RALT &kp K_APP
             >;
         };
 		
@@ -139,7 +139,7 @@
             bindings = <
 	&trans     &trans    &trans    &trans    &trans   &trans                                        &trans     &trans    &trans   &trans    &trans   &trans
     &trans     &trans    &trans    &trans    &trans   &trans                                        &trans     &trans    &trans   &trans    &trans   &trans
-    &sl MIRROR &trans    &trans    &trans    &trans   &trans                                   	    &trans     &trans    &trans   &trans    &trans   &kp RET
+    &mo MIRROR &trans    &trans    &trans    &trans   &trans                                   	    &trans     &trans    &trans   &trans    &trans   &kp RET
     &trans     &trans    &trans    &trans    &trans   &trans 	 &trans    &trans    &trans &trans  &trans     &trans    &trans   &trans    &trans   &trans
 								   &trans    &trans   &kp LSHIFT &trans    &trans    &trans &trans  &kp RSHIFT &trans    &trans
             >;
@@ -148,7 +148,7 @@
             bindings = <
 	&trans     &trans   &trans   &trans    &trans    &trans                                          &trans    &trans    &trans    &trans    &trans   &trans
     &trans     &kp Q    &kp W    &kp E     &kp R     &kp T                                           &kp Y     &kp U     &kp I     &kp O     &kp P    &trans
-    &kp LSHIFT &kp A    &kp S    &kp D     &kp F     &kp G                                           &kp H     &kp J     &kp K     &kp L     &kp SEMI &trans
+    &kp LSHIFT &kp A    &kp S    &kp D     &kp F     &kp G                                           &kp H     &kp J     &kp K     &kp L     &kp SEMI &mt RSHIFT RET
     &kp LCTRL  &kp Z    &kp X    &kp C     &kp V 	 &kp B      &trans   &trans    &trans   &trans   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
                                  &kp LGUI  &trans    &kp LSHIFT &trans   &trans    &trans   &trans   &trans    &kp RALT  &trans
             >;
@@ -159,7 +159,7 @@
     &kp T   &kp TAB    &kp Q    &kp W     &kp E     &kp R                                         &kp Y     &kp U     &kp UP    &kp O     &kp P    &trans
     &kp G   &kp LSHIFT &kp A	&kp S     &kp D     &kp F                                         &kp H     &kp LEFT  &kp DOWN  &kp RIGHT &kp SEMI &trans
     &kp B   &kp LCTRL  &kp Z    &kp X     &kp C     &kp V    &trans   &trans    &trans   &trans   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
-                                &kp K_APP &kp LALT  &mo NAVL &trans   &mo GMIR  &trans   &trans   &trans    &kp RALT  &trans
+                                &kp K_APP &kp LALT  &mo NAVL &trans   &mo QMIR  &trans   &trans   &trans    &kp RALT  &trans
             >;
         };
 		MIRROR {
@@ -173,20 +173,20 @@
         };
 		QMIR {
             bindings = <
-	&kp CAPS   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                          &trans    &trans    &trans    &trans    &trans   &trans
-    &kp DEL		&kp P    &kp O    &kp I     &kp U    &kp Y                                           &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
-    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                           &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
-    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &tog ARROWS &kp F14  &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans      &trans   &trans    &trans    &trans
+	&kp CAPS   	   &kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                          &trans    &trans    &trans    &trans    &trans   &trans
+    &kp DEL		   &kp P    &kp O    &kp I     &kp U    &kp Y                                           &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
+    &mt RSHIFT RET &kp SEMI &kp L    &kp K     &kp J    &kp H                                           &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
+    &kp RCTRL	   &kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &tog ARROWS &kp F14  &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
+								     &kp K_APP &kp RALT &trans &trans    &trans    &trans      &trans   &trans    &trans    &trans
             >;
         };
-		GMIR {
+		GTAB {
             bindings = <
-	&kp BSPC   	&kp N0   &kp N9   &kp N8    &kp N7   &kp N6                                          &trans    &trans    &trans    &trans    &trans   &trans
-    &kp DEL		&kp P    &kp O    &kp I     &kp U    &kp Y                                           &trans    &kp AMPS  &kp ASTRK &kp LPAR  &trans   &trans
-    &trans  	&kp SEMI &kp L    &kp K     &kp J    &kp H                                           &trans    &kp DLLR  &kp PRCNT &kp CARET &kp RPAR &trans
-    &kp RCTRL	&kp FSLH &kp DOT  &kp COMMA &kp M    &kp N  &trans    &trans    &tog ARROWS &kp F14  &trans    &kp EXCL  &kp AT    &kp HASH  &trans   &trans
-								  &kp K_APP &kp RALT &trans	&trans    &trans    &trans 		&trans   &trans    &trans    &trans
+	&trans   &trans    &trans    &trans    &trans   &trans                                      &trans   &trans    &trans   &trans    &trans   &trans
+    &kp TAB  &trans    &trans    &trans    &trans   &trans                                      &trans   &trans    &trans   &trans    &trans   &trans
+    &trans   &trans    &trans    &trans    &trans   &trans                                   	&trans   &trans    &trans   &trans    &trans   &trans
+    &trans   &trans    &trans    &trans    &trans   &trans 	 &trans    &trans    &trans &trans  &trans   &trans    &trans   &trans    &trans   &trans
+								 &trans    &trans   &trans   &trans    &trans    &trans &trans  &trans   &trans    &trans
             >;
         };
 		ARROWS {
