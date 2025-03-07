@@ -26,6 +26,10 @@ static int raw_hid_received_event_listener(const zmk_event_t *eh) {
         LOG_INF("display_process_raw_hid_data - received data_type %u", event->data[0]);
 		zmk_keymap_layer_deactivate(8);
     }
+	if (event->data[0]==4) {
+        LOG_INF("display_process_raw_hid_data - received data_type %u", event->data[0]);
+		zmk_keymap_layer_deactivate(4);
+    }
 
     return ZMK_EV_EVENT_BUBBLE;
 }
