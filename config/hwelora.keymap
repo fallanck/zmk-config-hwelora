@@ -14,22 +14,22 @@
     acceleration-exponent = <1>;
 };
 
-#define DEFAULT 0
-#define LNPAD	1
-#define SFTSWAP 2
-#define QWERTY   3
-#define GAMING   4
-#define MIRROR   5
-#define QMIR   6
-#define GTAB   7
-#define ARROWS   8
-#define ARACTV   9
-#define ARROWL   10
-#define NAVL   11
-#define NAVR   12
-#define NAV2   13
-#define FKEY   14
-#define SETTINGS   15
+#define DEFAULT     0
+#define LNPAD	      1
+#define SFTSWAP     2
+#define QWERTY      3
+#define GAMING      4
+#define MIRROR      5
+#define QMIR        6
+#define GTAB        7
+#define ARROWS      8
+#define ARACTV      9
+#define ARROWL      10
+#define NAVL        11
+#define NAVR        12
+#define NAV2        13
+#define FKEY        14
+#define SETTINGS    15
 #define SETTINGS2   16
 
 / {
@@ -44,7 +44,7 @@
 
 / {
     macros {
-        lm: lm {
+      lm: lm {
 			compatible = "zmk,behavior-macro-two-param";
 			wait-ms = <0>;
 			tap-ms = <0>;
@@ -118,9 +118,9 @@
 
         DEFAULT {
             bindings = <
-	&kp ESC    		 &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
-    &kp TAB    		 &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
-    &kp LSHIFT 		 &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RSHIFT
+	  &kp ESC    		  &kp N1   &kp N2   &kp N3    	   &kp N4    		&kp N5                                                    &kp N6     &kp N7    		 &kp N8   &kp N9    &kp N0   &kp CAPS
+    &kp TAB    		   &kp Y    &kp P    &kp O     	   &kp U     		&kp J                                                     &kp K      &kp D     	 	 &kp L    &kp C     &kp W    &kp DEL
+    &kp LSHIFT 		   &kp I    &kp N    &kp E     	   &kp A     		&kp DOT                                                   &kp M      &kp H    		 &kp T    &kp S     &kp R    &kp RSHIFT
     &lm QWERTY LCTRL &kp Q    &kp Z    &kp APOS  	   &kp COMMA 		&kp SEMI   &to DEFAULT &mo FKEY    &kp F13    &kp DEL 	  &kp B      &kp F    		 &kp G    &kp V     &kp X    &lm QWERTY RCTRL
 									   &lm QWERTY LGUI &lm QWERTY LALT  &mo NAVL   &kp SPACE   &mo MIRROR  &mo NAVR   &kp BSPC    &kp RET    &lm QWERTY RALT &kp K_APP
             >;
