@@ -57,11 +57,11 @@
 
         DEFAULT {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3           &kp N4           &kp N5                                                                   &kp N6   &kp N7           &kp N8     &kp N9      &kp N0         &kp CAPS
-&kp TAB         &kp Q   &kp W   &kp E            &kp R            &kp T                                                                    &kp Y    &kp U            &kp I      &kp O       &kp P          &kp BACKSPACE
-&kp LCTRL       &kp A   &kp S   &kp D            &kp F            &kp G                                                                    &kp H    &kp J            &kp K      &kp L       &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C            &kp V            &kp B     &kp LEFT_BRACKET  &kp CAPSLOCK    &kp F13   &kp RIGHT_BRACKET  &kp N    &kp M            &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT
-                                &lm QWERTY LGUI  &lm QWERTY LALT  &mo NAVL  &kp SPACE         &mo MIRROR      &mo NAVR  &kp SPACE          &kp RET  &lm QWERTY RALT  &kp K_APP
+&kp ESC                  &kp N1  &kp N2  &kp N3           &kp N4    &kp N5                                                                   &kp N6   &kp N7    &kp N8     &kp N9      &kp N0         &kp CAPS
+&kp TAB                  &kp Q   &kp W   &kp E            &kp R     &kp T                                                                    &kp Y    &kp U     &kp I      &kp O       &kp P          &kp BACKSPACE
+&mt LEFT_CONTROL ESCAPE  &kp A   &kp S   &kp D            &kp F     &kp G                                                                    &kp H    &kp J     &kp K      &kp L       &kp SEMICOLON  &mt RCTRL SINGLE_QUOTE
+&kp LEFT_SHIFT           &kp Z   &kp X   &kp C            &kp V     &kp B     &kp LEFT_BRACKET  &kp CAPSLOCK    &kp F13   &kp RIGHT_BRACKET  &kp N    &kp M     &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT
+                                         &lm QWERTY LGUI  &kp LGUI  &mo NAVL  &kp SPACE         &mo MIRROR      &mo NAVR  &kp SPACE          &kp RET  &kp RGUI  &kp K_APP
             >;
         };
 
